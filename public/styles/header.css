@@ -1,0 +1,15 @@
+.headerContent {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #296de3;
+  color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+.avatar {
+  margin-top: auto;
+}

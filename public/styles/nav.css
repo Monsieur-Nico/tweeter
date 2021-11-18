@@ -1,0 +1,29 @@
+/* Styling the navigation bar */
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #FFFFFF;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  font-family: 'Bungee';
+}
+
+.newTweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Source Sans Pro';
+}
+
+.fa-angle-double-down {
+  color: red;
+}
