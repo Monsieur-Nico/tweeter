@@ -89,6 +89,7 @@ $(document).ready(function() {
       postTweets($content);
       $("#errorMessage").slideUp("slow");
       $("#errorMessage2").slideUp("slow");
+      $(".counter").val('140');
     }
   });
 });

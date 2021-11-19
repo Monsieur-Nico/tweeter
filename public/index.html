@@ -36,6 +36,9 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+  <!-- CSS Rules -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
 </head>
 
 <body>
@@ -50,33 +53,35 @@
     </div>
   </nav>
   <!-- Header -->
-  <header>
-    <div class="headerContent">
-      <div class="avatar">
-        <img src="/images/profile-hex.png">
-      </div>
-      <div class="userName">
-        <span><b>Nico</b> The Great</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <h3>Compose Tweet</h3>
-      <form id="target" method="post" action="/tweets/">
-        <input name="text" id="tweet-text" placeholder="What are you humming about?"></input>
-        <p id="errorMessage">Please enter a tweet paragraph.</p>
-        <p id="errorMessage2">You can't have more than 140 characters</p>
-        <div class="button-counter">
-          <button class="tweet-button" type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+  <div class="bodyAndHeader">
+    <header>
+      <div class="headerContent">
+        <div class="avatar">
+          <img src="/images/profile-hex.png">
         </div>
-      </form>
-    </section>
-    <section id="tweetsSection">
-    </section>
+        <div class="userName">
+          <span><b>Nico</b> The Great</span>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <h3>Compose Tweet</h3>
+        <form id="target" method="post" action="/tweets/">
+          <input name="text" id="tweet-text" placeholder="What are you humming about?"></input>
+          <p id="errorMessage">Please enter a tweet paragraph.</p>
+          <p id="errorMessage2">You can't have more than 140 characters</p>
+          <div class="button-counter">
+            <button class="tweet-button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section id="tweetsSection">
+      </section>
+  </div>
   </main>
 </body>
 

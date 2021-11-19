@@ -1,11 +1,11 @@
 /* Styling the navigation bar */
 
 nav {
-  position: fixed;
+  position: absolute;
   display: flex;
   height: 80px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: transparent;
   color: #FFFFFF;
   flex-direction: row;
   justify-content: space-between;
@@ -26,4 +26,12 @@ nav {
 
 .fa-angle-double-down {
   color: red;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    background-color: #4056a1;
+  }
 }
